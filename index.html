@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kanchi's Site </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.button {
+  border-radius: 4px;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 50px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.color1{
+background-color: #33ccff;
+}
+
+.color2{
+background-color: #66ffcc;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+  
+<center>
+
+<h2>Select an option</h2> <br/><br/><br/><br/>
+
+<button class="button color1"><span> Mark Attendance </span></button>  <br/>
+<button class="button color2"><span> Attend Quiz </span></button>
+ </center>
+
+
+
+
+</body>
+</html>
