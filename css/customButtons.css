@@ -1,0 +1,139 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.animated-btn {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    line-height: 180px;
+    display: inline-block;
+    text-align: center;
+    background: #00C56E;
+    position: relative;
+}
+
+
+.animated-btn::before, .animated-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(0, 197, 110, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+.animated-btn::after {
+    background: rgb(0, 197, 110, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
+.animated-btn-2 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    line-height: 180px;
+    display: inline-block;
+    text-align: center;
+    background: #00bfff;
+    position: relative;
+}
+
+
+.animated-btn-2::before, .animated-btn-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(0, 191, 255, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+.animated-btn-2::after {
+    background: rgb(0, 191, 255, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.animated-btn-3 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    line-height: 180px;
+    display: inline-block;
+    text-align: center;
+    background: #EBE363;
+    position: relative;
+}
+
+
+.animated-btn-3::before, .animated-btn-3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(235, 227, 99, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+.animated-btn-3::after {
+    background: rgb(235, 227, 99, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+body {
+    background: #121618;
+}
